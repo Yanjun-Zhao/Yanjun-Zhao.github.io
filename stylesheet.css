@@ -353,6 +353,20 @@ section {
   background: #9e1b32;
 }
 
+.education-item {
+  align-items: flex-start;
+}
+
+.education-item .timeline-logo {
+  margin-top: 3px;
+}
+
+.degree-entry + .degree-entry {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border);
+}
+
 .logo-bilibili {
   color: #fff;
   background: #00aeec;
