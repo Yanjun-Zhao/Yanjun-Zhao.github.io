@@ -86,6 +86,8 @@ const gallery = document.getElementById("photoGallery");
 const galleryToggle = document.getElementById("galleryToggle");
 const galleryItems = [...document.querySelectorAll(".gallery-item")];
 
+if (!gallery.querySelector(".gallery-extra")) galleryToggle.parentElement.hidden = true;
+
 galleryToggle.addEventListener("click", () => {
   gallery.classList.add("expanded");
   galleryToggle.parentElement.hidden = true;
